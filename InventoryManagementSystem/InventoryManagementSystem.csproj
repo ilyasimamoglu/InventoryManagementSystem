@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{03526C19-F85F-4CB6-B13D-3A8AC2AC293F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>InventoryManagementSystem</RootNamespace>
+    <AssemblyName>InventoryManagementSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>TWİNLED\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>6146759E90D7322BD385C5B3E9904E9AC88FD2D7</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>InventoryManagementSystem_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CategoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CategoryForm.Designer.cs">
+      <DependentUpon>CategoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryModuleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CategoryModuleForm.Designer.cs">
+      <DependentUpon>CategoryModuleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomerButton.Designer.cs">
+      <DependentUpon>CustomerButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerForm.Designer.cs">
+      <DependentUpon>CustomerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerModuleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerModuleForm.Designer.cs">
+      <DependentUpon>CustomerModuleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderForm.Designer.cs">
+      <DependentUpon>OrderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderModuleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderModuleForm.Designer.cs">
+      <DependentUpon>OrderModuleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductForm.Designer.cs">
+      <DependentUpon>ProductForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductModuleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductModuleForm.Designer.cs">
+      <DependentUpon>ProductModuleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForm.Designer.cs">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserModuleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserModuleForm.Designer.cs">
+      <DependentUpon>UserModuleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WelcomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WelcomeForm.Designer.cs">
+      <DependentUpon>WelcomeForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CategoryForm.resx">
+      <DependentUpon>CategoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CategoryModuleForm.resx">
+      <DependentUpon>CategoryModuleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerButton.resx">
+      <DependentUpon>CustomerButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerForm.resx">
+      <DependentUpon>CustomerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerModuleForm.resx">
+      <DependentUpon>CustomerModuleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderForm.resx">
+      <DependentUpon>OrderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderModuleForm.resx">
+      <DependentUpon>OrderModuleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductForm.resx">
+      <DependentUpon>ProductForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductModuleForm.resx">
+      <DependentUpon>ProductModuleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UserForm.resx">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserModuleForm.resx">
+      <DependentUpon>UserModuleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WelcomeForm.resx">
+      <DependentUpon>WelcomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="InventoryManagementSystem_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.image2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trolley.image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file.image2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file.ımagered.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coustmer.ımage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Customer.ımage2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customers.ımage3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\categorie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oreder.eerr.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order.ımage pls.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users.ımage...png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customers.ımage31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\categorie1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users.ımage..1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oreder.eerr1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\categorie2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users.ımage..2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oreder.eerr2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order.ımage pls1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customers.ımage32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coustomer.ımage5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customers.ımage33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coustomer.ımage51.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order.ımage pls2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oreder.eerr3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order.ımage pls3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users.ımage..3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\categorie3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\categoreii2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users.ımage2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users.ımage21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\categorie4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\categoreii21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.pen.ımage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delet.ımage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\puls.ımage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.ımage3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\puls.ımage1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sparkled logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oreder.eerr4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
